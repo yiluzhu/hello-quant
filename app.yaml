@@ -1,0 +1,13 @@
+application: hello-quant
+version: 1-2
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /resources
+  static_dir: resources
+  
+- url: /.*
+  script: main.app
+  

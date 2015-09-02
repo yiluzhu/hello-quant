@@ -1,0 +1,14 @@
+<html>
+  <body>    
+    {% for path in paths %}
+      <img src="/resources/{{ path }}" />
+    {% endfor %}
+    <p>{{ note }}</p>
+
+    <form action="/">
+      <input type="submit" value="Start Again" />
+    </form>
+    
+  </body>
+</html>
+
